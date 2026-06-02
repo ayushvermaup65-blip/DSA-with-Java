@@ -8,10 +8,27 @@ public class Methods {
 
     }
 
-    static void main() {
-        System.out.println("hi");
-        print2KaTable(); //method call
-        System.out.println("bye");
+    static void printSum(int x, int y){
+        System.out.println("Sum: " + (x+y));
     }
 
+    static void printMultiplication(int x, int y){
+        int ans = x*y;
+        System.out.println("result: " + ans);
+    }
+
+     static int add(int p, int q){
+        int sum = p+q;
+        return sum;
+    }
+
+    static void main() {
+//        System.out.println("hi");
+//        print2KaTable(); //method call
+//        System.out.println("bye");
+//          printSum(3,5);
+//          printMultiplication(5,10);
+//          int Sum = add(3,4);
+//        System.out.println("Sum: " + Sum);
+    }
 }
