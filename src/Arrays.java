@@ -17,7 +17,6 @@ public class Arrays {
             System.out.println(val);
         }
 
-
 //        //declaration
 //        int arr[];
 //        //allocation
