@@ -16,6 +16,8 @@ public class Arrays {
         for(int val: arr){
             System.out.println(val);
         }
+
+
 //        //declaration
 //        int arr[];
 //        //allocation
