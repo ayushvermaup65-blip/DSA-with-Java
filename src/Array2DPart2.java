@@ -49,21 +49,55 @@ public class Array2DPart2 {
 //        System.out.println("Max Element is: " + max);
 
 
-        //Question 4: Find Min Array elements
+//        //Question 4: Find Min Array elements
+//        int arr[][] = {
+//                {116,26,31},
+//                {21,20,35}
+//        };
+//        int min = arr[0][0];
+//
+//        for (int i=0; i<arr.length; i++){
+//            for (int j=0; j<arr[i].length; j++){
+//                if(min > arr[i][j]){
+//                    min = arr[i][j];
+//                }
+//            }
+//        }
+//        System.out.println("Min Element is: " + min);
+
+
+
+//        //Question 5: Sum of diagonal elements
+//        int arr[][] = {
+//                {116,26,31},
+//                {21,20,35},
+//                {3,4,5}
+//        };
+//            int sum = 0;
+//        for (int i=0; i<arr.length; i++){
+//            for (int j=0; j<arr[i].length; j++){
+//                if(i == j){
+//                    sum += arr[i][j];
+//                }
+//            }
+//        }
+//        System.out.println("Sum of dialgonal element is : " + sum);
+
+
+        //Question 6: Search element in matrix
         int arr[][] = {
                 {116,26,31},
-                {21,20,35}
+                {21,20,35},
+                {3,4,5}
         };
-        int min = arr[0][0];
-
+        int target = 35;
         for (int i=0; i<arr.length; i++){
             for (int j=0; j<arr[i].length; j++){
-                if(min > arr[i][j]){
-                    min = arr[i][j];
+                if(arr[i][j] == target){
+                    System.out.println("The Target element is at row : " + i + " and column : " + j);
                 }
             }
         }
-        System.out.println("Min Element is: " + min);
 
 
 
