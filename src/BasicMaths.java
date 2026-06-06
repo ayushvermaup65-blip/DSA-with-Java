@@ -71,14 +71,29 @@ public class BasicMaths {
 
     // Prime Number
 
-    static boolean isPrime(int num) {
-        for (int i = 2; i*i<=num; i++) {
-            if (num % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
+//    static boolean isPrime(int num) {
+//        for (int i = 2; i*i<=num; i++) {
+//            if (num % i == 0) {
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
+
+
+
+    // GCD of a number
+
+     static int getGCD(int a ,int b){
+         // gcd (a, b) = gcd(b, a%b)
+         while (b != 0){
+             int oldValueofb = b;
+             b = a%b;
+             a = oldValueofb;
+         }
+         int ans = a;
+         return ans;
+     }
 
 
     static void main() {
@@ -92,7 +107,8 @@ public class BasicMaths {
 //        System.out.println(ans2);
 //          boolean ans = isPalindrome(num);
 //          System.out.println(ans);
-          System.out.println(isPrime(num));
+//          System.out.println(isPrime(num));
+        System.out.println(getGCD(18,12));
 
     }
 }
