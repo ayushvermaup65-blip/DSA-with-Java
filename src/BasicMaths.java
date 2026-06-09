@@ -96,6 +96,35 @@ public class BasicMaths {
          return ans;
      }
 
+     static int getLCM( int a, int b){
+         int gcd = getGCD(a,b);
+         //gcd(18,12) == 6
+         int prod = a*b;
+         //prod(a,b) = 216
+         int lcm = prod/gcd;
+         // 216/6
+         return lcm;
+     }
+
+     static boolean isArmstrongNumber(int num){
+         int sum =0;
+         int originalNum = num;
+
+         while (num!=0){
+             int digit = num %10;
+             int cubeOfDigit = digit*digit*digit;
+             sum = sum + cubeOfDigit;
+
+             num = num / 10;
+         }
+         if (sum == originalNum){
+             return true;
+         }
+         else {
+             return false;
+         }
+     }
+
 
     static void main() {
         int num = 31;
@@ -109,7 +138,8 @@ public class BasicMaths {
 //          boolean ans = isPalindrome(num);
 //          System.out.println(ans);
 //          System.out.println(isPrime(num));
-        System.out.println(getGCD(18,12));
+//        System.out.println(getLCM(18,12));
+        System.out.println(isArmstrongNumber(155));
 
     }
 }
