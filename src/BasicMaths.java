@@ -85,45 +85,52 @@ public class BasicMaths {
 
     // GCD of a number
 
-     static int getGCD(int a ,int b){
-         // gcd (a, b) = gcd(b, a%b)
-         while (b != 0){
-             int oldValueofb = b;
-             b = a%b;
-             a = oldValueofb;
-         }
-         int ans = a;
-         return ans;
-     }
+//     static int getGCD(int a ,int b){
+//         // gcd (a, b) = gcd(b, a%b)
+//         while (b != 0){
+//             int oldValueofb = b;
+//             b = a%b;
+//             a = oldValueofb;
+//         }
+//         int ans = a;
+//         return ans;
+//     }
 
-     static int getLCM( int a, int b){
-         int gcd = getGCD(a,b);
-         //gcd(18,12) == 6
-         int prod = a*b;
-         //prod(a,b) = 216
-         int lcm = prod/gcd;
-         // 216/6
-         return lcm;
-     }
 
-     static boolean isArmstrongNumber(int num){
-         int sum =0;
-         int originalNum = num;
+    // LCM of a two numbers
 
-         while (num!=0){
-             int digit = num %10;
-             int cubeOfDigit = digit*digit*digit;
-             sum = sum + cubeOfDigit;
+//     static int getLCM( int a, int b){
+//         int gcd = getGCD(a,b);
+//         //gcd(18,12) == 6
+//         int prod = a*b;
+//         //prod(a,b) = 216
+//         int lcm = prod/gcd;
+//         // 216/6
+//         return lcm;
+//     }
 
-             num = num / 10;
-         }
-         if (sum == originalNum){
-             return true;
-         }
-         else {
-             return false;
-         }
-     }
+
+
+    // Armstrong number
+
+//     static boolean isArmstrongNumber(int num){
+//         int sum =0;
+//         int originalNum = num;
+//
+//         while (num!=0){
+//             int digit = num %10;
+//             int cubeOfDigit = digit*digit*digit;
+//             sum = sum + cubeOfDigit;
+//
+//             num = num / 10;
+//         }
+//         if (sum == originalNum){
+//             return true;
+//         }
+//         else {
+//             return false;
+//         }
+//     }
 
 
     static void main() {
