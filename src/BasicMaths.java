@@ -69,6 +69,7 @@ public class BasicMaths {
 //    }
 
 
+
     // Prime Number
 
 //    static boolean isPrime(int num) {
