@@ -1,4 +1,3 @@
-
 public class BasicMaths {
 
     // Print digits of a number
@@ -133,8 +132,75 @@ public class BasicMaths {
 //     }
 
 
+    // Power of a number
+
+//    static int powerOfNumber(int a, int b){
+//        int ans = 1;
+//        for (int i=1; i<=b; i++){
+//            ans *= a;
+//        }
+//        return ans;
+//    }
+
+
+    // find divisors or check perfect number ( kisi number ke divisors of add karne par ans vahi number aata hai)
+
+//    static boolean isPerfectNumber(int num){
+//        int ans = 1;
+//        for (int i=2; i*i <= num; i++){
+//            if(num % i == 0){
+//                // i ne num ko perfectly divide kar diya hai
+//                // to ab factor pair kya banega
+//                // 1st factor = 1
+//                // 2nd factor = num/i
+//                int firstFactor = i;
+//                int secondFactor = num/i;
+//                ans += firstFactor + secondFactor;
+//            }
+//        }
+//        if (ans == num){
+//            return true;
+//        }
+//        else {
+//            return false;
+//        }
+//    }
+
+
+    // Print all Prime numbers from 1 to N
+
+//    static void primeNumbers( int n) {
+//
+//        for (int num = 2; num <= n; num++) {
+//            boolean isPrime = isPrime(num);
+//            if (isPrime) {
+//                System.out.println(num);
+//            }
+//        }
+//    }
+
+
+    // Count number of Even digits
+
+//    static int countEvenDigits(int num){
+//        int n = num;
+//        int ans = 0;
+//        while  (n > 0 ){
+//            int digit = n % 10;
+//            if(digit % 2 == 0){
+//                ans++;
+//            }
+//            n /= 10;
+//
+//        }
+//        return ans;
+//    }
+
+
+
+
     static void main() {
-        int num = 31;
+//        int num = 31;
 //        printDigits(num);
 //        int ans = countDigits(num);
 //        System.out.println(ans);
@@ -142,13 +208,17 @@ public class BasicMaths {
 //        System.out.println(ans1);
 //        int ans2 = reverseNumber(num);
 //        System.out.println(ans2);
-//          boolean ans = isPalindrome(num);
-//          System.out.println(ans);
-//          System.out.println(isPrime(num));
+//        boolean ans = isPalindrome(num);
+//        System.out.println(ans);
+//        System.out.println(isPrime(num));
 //        System.out.println(getLCM(18,12));
-        System.out.println(isArmstrongNumber(155));
-
+//        System.out.println(isArmstrongNumber(155));
+//        System.out.println(powerOfNumber(2,5));
+//        System.out.println(isPerfectNumber(6));
+//        primeNumbers(100);
+        System.out.println(countEvenDigits(2345678));
     }
+
 }
 
 
