@@ -216,7 +216,7 @@ public class BasicMaths {
 //        System.out.println(powerOfNumber(2,5));
 //        System.out.println(isPerfectNumber(6));
 //        primeNumbers(100);
-        System.out.println(countEvenDigits(2345678));
+//          System.out.println(countEvenDigits(2345678));
     }
 
 }
