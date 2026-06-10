@@ -19,7 +19,15 @@ public class Student {
         this.age = age  ;
         this.name = name;
         this.nos = nos;
+    }
 
+    //copy ctor
+    public Student(Student srcobj) {
+        System.out.println("Student Copy ctor Called");
+        this.id = srcobj.id;
+        this.age = srcobj.age;
+        this.name = srcobj.name;
+        this.nos = srcobj.nos;
     }
 
     // Methods / Behaviours

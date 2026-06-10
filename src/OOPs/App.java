@@ -26,5 +26,13 @@ public class App {
         A.bunk();
         A.study();
         A.sleep();
+
+        // copy ctor
+//        Student B = new Student(A);
+//        System.out.println(B.name);
+//        System.out.println(B.age);
+//        System.out.println(B.id);
+//        System.out.println(B.nos);
+//        B.sleep();
     }
 }
