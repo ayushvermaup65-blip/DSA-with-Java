@@ -17,15 +17,21 @@ public class App {
 //        A.sleep();
 
         // Parameterized Ctor
-        Student A = new Student(1, 12, "Rahul", 3);
-        System.out.println(A.name);
-        System.out.println(A.age);
-        System.out.println(A.id);
-        System.out.println(A.nos);
+        Student A = new Student(1, 12, "Rahul", 3, "Tina");
+        System.out.println(A.getAge());
 
-        A.bunk();
-        A.study();
-        A.sleep();
+        A.setAge(6765);
+
+        System.out.println(A.getAge());
+        //System.out.println(A.getName());
+//        System.out.println(A.getAge());
+//        System.out.println(A.getId());
+//        System.out.println(A.getNos());
+//        System.out.println(A.getGf());
+
+//        A.bunk();
+//        A.study();
+//        A.sleep();
 
         // copy ctor
 //        Student B = new Student(A);

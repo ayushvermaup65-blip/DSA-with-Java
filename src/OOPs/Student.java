@@ -2,10 +2,28 @@ package OOPs;
 
 public class Student {
     // Attributes
-    public int id;
-    public int age;
-    public String name;
-    public int nos;
+    private int id;
+    private int age;
+    private String name;
+    private int nos;
+    private String gf;
+
+    public String getName(){
+        return this.name;
+    }
+
+    public int getAge(){
+        return this.age;
+    }
+
+    public void setAge(int a){
+        //extra layer of authentication
+        if(age < 100) {
+            this.age = a;
+        }
+        else {
+        return;
+    }}
 
     //Default ctor // attribute -> garbage
     public Student(){
@@ -13,12 +31,13 @@ public class Student {
     }
 
     //Parameterized ctor
-    public Student(int id, int age, String name, int nos){
+    public Student(int id, int age, String name, int nos, String gf){
         System.out.println("Student Parameterized ctor Called");
         this.id = id;
         this.age = age  ;
         this.name = name;
         this.nos = nos;
+        this.gf = gf;
     }
 
     //copy ctor
@@ -41,5 +60,9 @@ public class Student {
 
     public void bunk(){
         System.out.println(name + " bunking");
+    }
+
+    private void gfChatting(){
+        System.out.println(name + "Chatting with gf");
     }
 }
