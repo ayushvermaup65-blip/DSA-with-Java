@@ -20,6 +20,6 @@ public class Main {
     }
 
     public static void doDrawingStuff(Shape s){
-        s.draw(); // iska meaning hai ki Shape class ka draw method call hona chahiye , par ye Circle class ke draw method ko call kar rha hai
+        s.draw(); //  iska meaning hai ki Shape class ka draw method call hona chahiye , par ye Circle class ke draw method ko call kar rha hai
     }
 }
