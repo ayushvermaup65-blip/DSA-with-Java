@@ -1,6 +1,6 @@
 package OOPs.Polymorphism;
 
-public class Main {
+public class Base {
     static void main() {
 //        Calculator c = new Calculator();
 //        System.out.println(c.add(2,3));
@@ -35,4 +35,3 @@ public class Main {
 //        c.draw();
      }
 }
- 
