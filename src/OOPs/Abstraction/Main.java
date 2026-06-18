@@ -73,12 +73,25 @@ interface Bird{
     default void sleep(){ // Interface with implementation
         System.out.println("Bird sleeping");
     }
-        }
-        interface Walk{
-            void walk();
-        }
 
-class Sparrow implements Bird, Walk {
+    void walk();
+}
+
+class Crow implements Bird{
+    @Override
+    public void fly(){ // here is the implementation of the interface
+        System.out.println("Crow flying");
+    }
+    @Override
+    public void eat(){ // here is the implementation of the interface
+        System.out.println("Crow eating");
+    }
+    @Override
+    public void walk(){ System.out.println("Crow walking"); }
+}
+
+
+class Sparrow implements Bird {
 
     @Override
     public void fly() { // here is the implementation of the interface
@@ -96,16 +109,26 @@ class Sparrow implements Bird, Walk {
     }
 }
 
-class Crow implements Bird{
+class Pigeon implements Bird {
     @Override
-    public void fly(){ // here is the implementation of the interface
-        System.out.println("Crow flying");
+    public void fly(){
+        System.out.println("Pigeon flying");
     }
     @Override
-    public void eat(){ // here is the implementation of the interface
-        System.out.println("Crow eating");
+    public void eat(){
+        System.out.println("Pigeon eating");
+    }
+    @Override
+    public void walk(){
+        System.out.println("Pigeon walking");
+    }
+    @Override
+    public void sleep(){
+        System.out.println("Pigeon sleeping");
     }
 }
+
+
 
 
 public class Main {
@@ -113,12 +136,16 @@ public class Main {
     public static void doBirdStuff(Bird b){
         b.eat();
         b.fly();
+        b.walk();
+        b.sleep();
 
 
     }
     static void main() {
+        doBirdStuff(new Pigeon());
         doBirdStuff(new Sparrow());
         doBirdStuff(new Crow());
+
     }
 }
 
