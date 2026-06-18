@@ -113,18 +113,8 @@ public class Main {
     public static void doBirdStuff(Bird b){
         b.eat();
         b.fly();
-        b.eat();
-        b.fly();
-        b.eat();
-        b.fly();
-        b.eat();
-        b.fly();
-        b.eat();
-        b.fly();
-        b.eat();
-        b.fly();
-        b.eat();
-        b.fly();
+
+
     }
     static void main() {
         doBirdStuff(new Sparrow());
