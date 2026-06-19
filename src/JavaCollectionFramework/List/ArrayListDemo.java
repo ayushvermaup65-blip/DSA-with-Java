@@ -16,7 +16,7 @@ public class ArrayListDemo {
 //        Collection<Integer> collection = new ArrayList<>();
 //
 //
-        // add()
+        // add() -> adds an element to a list
 //        list.add(10);
 //        list.add(20);
         list.add(30);
@@ -24,11 +24,11 @@ public class ArrayListDemo {
         list.add(40);
 //        System.out.println(list);
 
-        // remove()
+        // remove() -> removes an element from the list
 //        list.remove(0);
 //        System.out.println(list);
 //
-//        // addAll()
+//        // addAll() -> adds all elements of one list to another
 //        List<Integer> list2 = new ArrayList<>();
 //        list2.add(101);
 //        list2.add(102);
@@ -37,26 +37,26 @@ public class ArrayListDemo {
 //        list.addAll(list2);
 //        System.out.println(list);
 //
-//        // removeAll()
+//        // removeAll() -> removes all the elements from the list
 //        list.removeAll(list2);
 //        System.out.println(list);
 //
-//        // size()
+//        // size() -> Returns the length of the arraylist
 //        System.out.println(list.size());
 //        System.out.println("Printing list2 : " + list2);
 //
-//        // clear()
+//        // clear() -> removes all the elements from the list (more efficient than removeAll())
 //        list2.clear();///        System.out.println(list2.size());
 //
 
-//        // iterator() -> I want to traverse the list using iterator
+//        // iterator() -> returns iterator object that can be used to sequentially access elements of lists
 //        Iterator<Integer> iterator = list.iterator();
 //        while (iterator.hasNext()){
 //            System.out.println("Element: " + iterator.next());
 //        }
 
 
-        // get()
+        // get() -> helps to randomly access elements from lists
         List<Integer> list3 = new ArrayList<>();
         list3.add(11);
         list3.add(12);
@@ -65,20 +65,20 @@ public class ArrayListDemo {
 //        System.out.println("before list: " + list3);
 
 
-        // set()
+        // set() -> changes elements of lists
 //        list3.set(0,100);
 //        System.out.println("after list: " + list3);
 
-        // toArray()
+        // toArray() -> converts a list into an array
 //        Object[] arr = list3.toArray();
 //        for(Object obj: arr) {
 //            System.out.println(obj);
 //        }
 
-        // contains()
+        // contains() -> Searches the arraylist for the specified element and returns a boolean result
 //        System.out.println(list3.contains(100));
 
-        // sorting
+        // sort -> Sort the arraylist elements
         list.add(12);
         list.add(6);
         System.out.println("Printing entire list: " + list);
@@ -91,19 +91,19 @@ public class ArrayListDemo {
 //        Collections.sort(list, Collections.reverseOrder());
 //        System.out.println("Printing in descending order : " + list);
 
-        // clone()
+        // clone() -> Creates a new arraylist with the same element, size, and capacity
         ArrayList<Integer> newList = (ArrayList<Integer>) list.clone();
         System.out.println("Printing the clone list : " + newList);
 
 
-        //ensureCapacity()
+        //ensureCapacity() -> Specifies the total element the arraylist can contain
         ArrayList<Integer> marks = new ArrayList<>();
         marks.ensureCapacity(100);
 
-        // isEmpty()
+        // isEmpty() -> Checks if the arraylist is empty
         System.out.println(marks.isEmpty()); // true
 
-        // indexOf()
+        // indexOf() -> Searches a specified element in an arraylist and returns the index of the element
         System.out.println(newList.indexOf(40)); // 3
      }
 }
