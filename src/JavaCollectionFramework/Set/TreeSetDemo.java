@@ -1,10 +1,13 @@
 package JavaCollectionFramework.Set;
 
-import java.util.*;
+import java.util.Set;
+import java.util.TreeSet;
 
-public class LinkedHashSetDemo {
+public class TreeSetDemo {
     static void main(String[] args) {
-        Set<Integer> st = new LinkedHashSet<>();
+
+        // TreeSet is used to add elements in the set in sorted manner.
+        Set<Integer> st = new TreeSet<>();
         st.add(40);
         st.add(10);
         st.add(10);
