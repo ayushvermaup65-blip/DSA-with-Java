@@ -14,6 +14,11 @@ public class Student {
                 '}';
     }
 
+
+    // niche ke equals aur hashCode methods ko override karna padha kyoki
+    // agar diff object ke paas same hi tarah ka data save hai to usse set
+    // me 1 hi baar kaise store kare
+    // in dono methods ko manually learn karna hai.
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
