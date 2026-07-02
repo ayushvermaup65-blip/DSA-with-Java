@@ -26,9 +26,13 @@ public class HashMapDemo {
         table.putAll(mapping);
         System.out.println("After: " + table);
 
+
+
         // Remove(K)
         table.remove("en");
         System.out.println(table);
+
+
 
         // size()
 //        System.out.println(table.size());
@@ -48,9 +52,11 @@ public class HashMapDemo {
         // getOrDefault(K, defaultValue) -> Returns the value associated with the specified key K. If the key is not found, it returns the defaultValue.
 //        System.out.println(table.getOrDefault("us", "None"));
 
-        // containsKey(K)
 
+        // containsKey(K)
         System.out.println(table.containsKey("in"));
+
+
 
         // containsValue(V)
         System.out.println(table.containsValue("Australia"));
