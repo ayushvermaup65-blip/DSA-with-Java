@@ -1,7 +1,7 @@
 package JavaCollectionFramework.Map;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+
 
 public class HashMapDemo {
     static void main(String[] args) {
@@ -28,7 +28,7 @@ public class HashMapDemo {
 
 
 
-        // Remove(K)
+        // remove(K) or remove(K,V)
         table.remove("en");
         System.out.println(table);
 
@@ -54,11 +54,29 @@ public class HashMapDemo {
 
 
         // containsKey(K)
-        System.out.println(table.containsKey("in"));
+        //System.out.println(table.containsKey("in"));
 
 
 
         // containsValue(V)
-        System.out.println(table.containsValue("Australia"));
+        //System.out.println(table.containsValue("Australia"));
+
+        // replace(K,V) or replace(K, oldValue, newValue)
+        //System.out.println(table);
+
+        table.replace("in", "Indonesia");
+        System.out.println(table);
+
+        // keyset()
+        //Set<String> keyset = table.keySet();
+        //System.out.println(keyset);
+
+        // values()
+        //Collection<String> valueSet =  table.values();
+        //System.out.println(valueSet);
+
+        // get the set of all the entries from map
+        Set<Map.Entry<String,String>> entryset = table.entrySet();
+        System.out.println("Printing entries: " + entryset);
     }
 }
