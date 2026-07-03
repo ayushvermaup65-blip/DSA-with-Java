@@ -6,7 +6,11 @@ import java.util.*;
 public class HashMapDemo {
     static void main(String[] args) {
 
-        Map<String, String> mapping = new HashMap<>();
+        Map<String, String> mapping = new HashMap<>(); // O(1)
+
+        // use LinkedHashMap to input elements in order in hashMap -> O(n)
+        // use TreeMap to input sorted elements -> O(log n)
+
 
 
         // Insertion -> put(K,V)
