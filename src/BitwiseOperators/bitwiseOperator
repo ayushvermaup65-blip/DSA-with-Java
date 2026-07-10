@@ -1,4 +1,4 @@
- Bitwise Operator ->
+Bitwise Operator ->
             Bitwise operators work at the binary lavel(bits).
             Every number inside a computer is stored in binary(0s and 1s).
             Exa -> 5 -> 00000101 -> sabse right wale bit (1) ko "least significant bit" kahte hai
@@ -6,7 +6,7 @@
                    3 -> 00000011
             Bitwise operators perform operations bit by bit.
 
- Why Learn Bitwise Operators? ->
+Why Learn Bitwise Operators? ->
       Bitwise operators are used in:
             optimizing code
             competitive programming
@@ -18,7 +18,7 @@
             state compression problems
             advanced algorithms
 
- Types of Bitwise Operators ->
+Types of Bitwise Operators ->
     & -> AND
     | -> OR
     ^ -> XOR
@@ -26,3 +26,42 @@
     << -> LeftShift
     >> -> RightShift
     >>> -> Unsigned Right Shift
+
+    & -> ( Only 1 if both bits are 1)
+       1 & 1 = 1
+       1 & 0 = 0
+       0 & 1 = 0
+       0 & 0 = 0
+
+    | -> ( Only 0 if both bits are 0)
+       1 | 1 = 1
+       1 | 0 = 1
+       0 | 1 = 1
+       0 | 0 = 0
+
+    ^ -> ( Same-> 0, Different -> 1)
+        1 ^ 1 = 0
+        1 ^ 0 = 1
+        0 ^ 1 = 1
+        0 ^ 0 = 0
+
+    ~ -> ( Flips all bits)
+        0 → 1
+        1 → 0
+
+    << -> ( Shift bits left, Add zeros at right)
+        5 = 00000101
+
+        5 << 1
+
+        00001010 → 10
+
+    >> -> ( Shift bits right)
+        8 = 00001000
+
+        8 >> 1
+
+        00000100 → 4
+
+    >>> -> ( Similiar to >>, but always fills with 0)
+        Used mostly in advanced cases
