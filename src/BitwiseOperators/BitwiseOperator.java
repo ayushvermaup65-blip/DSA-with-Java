@@ -9,6 +9,9 @@ public class BitwiseOperator {
         System.out.println(a | b);
         System.out.println(a ^ b);
         System.out.println(~a);
+        System.out.println(~b);
+        System.out.println(a<<3);
+        System.out.println(b>>2);
 
     }
 }
