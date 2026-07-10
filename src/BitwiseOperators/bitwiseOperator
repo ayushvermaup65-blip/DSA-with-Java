@@ -1,0 +1,15 @@
+ Bitwise Operator ->
+            Bitwise operators work at the binary lavel(bits).
+            Every number inside a computer is stored in binary(0s and 1s).
+            Exa -> 5 -> 00000101
+                   3 -> 00000011
+            Bitwise operators perform operations bit by bit.
+
+ Why Learn Bitwise Operators? ->
+      Bitwise operators are used in:
+            optimizing code
+            competitive programming
+            system-level programming
+            cryptography
+            fast calculations
+            DSA tricks (very important for interviews)
