@@ -39,13 +39,25 @@ public class BitwiseOperator {
 
         // Using Bitwise AND to check if a number is power of 2 or not
         // jis bhi number ke bit form me bit-> 1 sirf ek baar aata hai sirf vahi number hi 2 ki power wali number hai.
-        int n = 10;
-        if ((n & (n-1)) == 0) {
-            System.out.println(n + " is power of 2");
+//        int n = 10;
+//        if ((n & (n-1)) == 0) {
+//            System.out.println(n + " is power of 2");
+//        }
+//        else{
+//            System.out.println(n + " is not power of 2");
+//        }
+
+        int n = 5;
+        int count = 0;
+        while (n != 0){
+            if ((n&1) != 0){
+                // mujhe ek set bit milgyi
+                count++;
+            }
+            // right shift to remove this bit
+            n = n>>1;
         }
-        else{
-            System.out.println(n + " is not power of 2");
-        }
+        System.out.println("Set bit Count: " + count);
 
     }
 }
