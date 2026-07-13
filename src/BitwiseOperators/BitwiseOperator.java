@@ -46,8 +46,8 @@ public class BitwiseOperator {
 //        else{
 //            System.out.println(n + " is not power of 2");
 //        }
-
-        int n = 5;
+                //  OR  //
+        int n = 7;
         int count = 0;
         while (n != 0){
             if ((n&1) != 0){
