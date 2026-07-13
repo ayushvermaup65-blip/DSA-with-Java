@@ -48,5 +48,14 @@ public class PracticeQuestions {
             unique = unique ^ num;
         }
         System.out.println("The unique element is: " + unique);
+
+
+        // Ques 4: Remove last set bit(1) occuring
+        int n = 8;
+        System.out.println(n & (n-1));
+
+        // Example: 5 -> 00000101 => 00000100 => 4
+        //          8 -> 00001000 => 00000000 => 0
+
     }
 }
