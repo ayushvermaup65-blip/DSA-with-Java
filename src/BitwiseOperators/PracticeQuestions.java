@@ -60,7 +60,7 @@ public class PracticeQuestions {
 
         // Ques 5: Get last set bit
         int m = 15;
-        System.out.println(n & (-n));
+        System.out.println(m & (-m));
 
         // Example: 10 -> 00001010 => 00000010 => 2
         //          15 -> 00001111 => 00000001 => 1
