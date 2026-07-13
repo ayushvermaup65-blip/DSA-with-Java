@@ -27,13 +27,13 @@ public class BitwiseOperator {
 //        }
 
         // Using Bitwise AND & to find if a number is even or odd
-//        int n = 11;
-//        if ((n & 1 ) == 0) {
-//            System.out.println("Even");
-//        }
-//        else {
-//            System.out.println("Odd");
-//        }
+        int n = 11;
+        if ((n & 1 ) == 0) {
+            System.out.println("Even");
+        }
+        else {
+            System.out.println("Odd");
+        }
 
 
 
@@ -47,17 +47,17 @@ public class BitwiseOperator {
 //            System.out.println(n + " is not power of 2");
 //        }
                 //  OR  //
-        int n = 7;
-        int count = 0;
-        while (n != 0){
-            if ((n&1) != 0){
-                // mujhe ek set bit milgyi
-                count++;
-            }
-            // right shift to remove this bit
-            n = n>>1;
-        }
-        System.out.println("Set bit Count: " + count);
+//        int n = 7;
+//        int count = 0;
+//        while (n != 0){
+//            if ((n&1) != 0){
+//                // mujhe ek set bit milgyi
+//                count++;
+//            }
+//            // right shift to remove this bit
+//            n = n>>1;
+//        }
+//        System.out.println("Set bit Count: " + count);
 
     }
 }
