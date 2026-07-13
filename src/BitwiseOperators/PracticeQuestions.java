@@ -1,7 +1,10 @@
 package BitwiseOperators;
 
+import java.util.Scanner;
+
 public class PracticeQuestions {
     static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         System.out.println(5&6);
         System.out.println(5|6);
         System.out.println(5^6);
@@ -17,6 +20,21 @@ public class PracticeQuestions {
         else {
             System.out.println("Odd");
         }
+
+        int b = 4;
+        int c = 5;
+        System.out.println("Before Swapping:");
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+
+        // Swapping using XOR
+        b = b ^ c;
+        c = b ^ c;
+        b = b ^ c;
+
+        System.out.println("After Swapping:");
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
 
     }
 }
