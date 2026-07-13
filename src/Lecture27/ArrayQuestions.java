@@ -26,6 +26,22 @@ public class ArrayQuestions {
             newArray[i] = newElement;
         }
         return newArray;
+    }  // T.C. -> O(n), S.C. -> O(n)
+
+
+    // Question 3: Search for an element in an Array {Linear Search}
+    static boolean searchElement(int [] arr, int target){
+
+        int size = arr.length;
+        for(int i=0; i<size; i++){
+            if (arr[i] == target){
+                return true;
+            }
+        }
+        // agar pura array travel ho chuka hai
+        // and ek baar bhi target nhi mila
+        // iska matlab target nhi mila , target false
+        return false;
     }
 
 
@@ -43,5 +59,12 @@ public class ArrayQuestions {
         for (int i: ans){
             System.out.println(i);
         }
+
+
+        // Question 3: Search for an element in an Array {Linear Search}
+        int [] arr3 = {1,6,3,7,5,3,4,6};
+        int target = 55;
+        boolean ans2 = searchElement(arr3, 89);
+        System.out.println(ans2);
     }
 }
