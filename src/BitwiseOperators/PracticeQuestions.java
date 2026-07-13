@@ -21,6 +21,9 @@ public class PracticeQuestions {
             System.out.println("Odd");
         }
 
+
+
+        // Ques 2: Swap two number using XOR
         int b = 4;
         int c = 5;
         System.out.println("Before Swapping:");
@@ -36,5 +39,14 @@ public class PracticeQuestions {
         System.out.println("b = " + b);
         System.out.println("c = " + c);
 
+
+        // Ques 3: Find unique element (all others appear twice)
+        int [] arr = {12,15,16,12,16,24,15};
+        int unique = 0;
+        // finding the unique element using XOR
+        for (int num : arr){
+            unique = unique ^ num;
+        }
+        System.out.println("The unique element is: " + unique);
     }
 }
