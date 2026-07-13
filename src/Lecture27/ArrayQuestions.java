@@ -1,5 +1,7 @@
 package Lecture27;
 
+import java.util.Arrays;
+
 public class ArrayQuestions {
 
     // Question 1: Find the average of array elements
@@ -14,7 +16,17 @@ public class ArrayQuestions {
     }  // T.C. -> O(n), S.C. -> O(1)
 
 
-
+    // Question 2: Multiply each element of array by 10
+    static int[] multiplyBy10(int[] arr){
+        int size = arr.length;
+        int newArray[] = new int[size];
+        for (int i=0; i<size; i++){
+            int element = arr[i];
+            int newElement = element * 10;
+            newArray[i] = newElement;
+        }
+        return newArray;
+    }
 
 
 
@@ -23,5 +35,13 @@ public class ArrayQuestions {
         int [] arr = {1,2,3,4,5,6,7};
         System.out.println("The average is: " + getAverage(arr));
 
+
+        // Question 2: Multiply each element of array by 10
+        int [] arr2 = {2,3,4,5,6,7};
+        int [] ans = multiplyBy10(arr2);
+        System.out.println("The new array is: ");
+        for (int i: ans){
+            System.out.println(i);
+        }
     }
 }
