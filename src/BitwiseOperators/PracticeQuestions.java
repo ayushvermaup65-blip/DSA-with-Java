@@ -57,5 +57,12 @@ public class PracticeQuestions {
         // Example: 5 -> 00000101 => 00000100 => 4
         //          8 -> 00001000 => 00000000 => 0
 
+
+        // Ques 5: Get last set bit
+        int m = 15;
+        System.out.println(n & (-n));
+
+        // Example: 10 -> 00001010 => 00000010 => 2
+        //          15 -> 00001111 => 00000001 => 1
     }
 }
