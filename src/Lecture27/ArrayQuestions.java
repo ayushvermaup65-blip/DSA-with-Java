@@ -1,7 +1,5 @@
 package Lecture27;
 
-import java.util.Arrays;
-
 public class ArrayQuestions {
 
     // Question 1: Find the average of array elements
@@ -58,6 +56,26 @@ public class ArrayQuestions {
     }  // T.C. -> O(n), S.C. -> O(1)
 
 
+
+    // Question 5: Return Sum of +ve and -ve numbers
+    static int[] getPosNegSum(int []arr){
+        int positiveSum = 0;
+        int negativeSum = 0;
+        int size = arr.length;
+        for(int i =0; i<size; i++){
+            if(arr[i] < 0){
+                // num is negative
+                negativeSum += arr[i];
+            } else{
+                // num is positive
+                positiveSum += arr[i];
+            }
+        }
+        int ans[] = {positiveSum, negativeSum};
+        return ans;
+    }  // T.C. -> O(n), S.C. -> O(1)
+
+
     static void main() {
         // Question 1: Find the average of array elements
         int [] arr = {1,2,3,4,5,6,7};
@@ -83,5 +101,14 @@ public class ArrayQuestions {
         // Question 4: Find the maximum element in an array
         int [] arr4 = {3,4,17,23,45,78};
         System.out.println(maxElement(arr4));
+
+
+        // Question 5: Return Sum of +ve and -ve numbers
+        int arr5[] = {2,4,6,-5,-4,-2};
+        int ans1[] = getPosNegSum(arr5);
+        System.out.println("Positive Sum: " + ans1[0]);
+        System.out.println("Negative Sum: " + ans1[1]);
+
+
     }
 }
