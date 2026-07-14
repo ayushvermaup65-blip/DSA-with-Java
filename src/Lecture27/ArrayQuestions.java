@@ -76,6 +76,35 @@ public class ArrayQuestions {
     }  // T.C. -> O(n), S.C. -> O(1)
 
 
+
+    // Question 6: Count the number of Zeroes and Ones
+    static int[] countZeroesAndOnes(int []arr){
+        int ones = 0;
+        int zeroes = 0;
+        int size = arr.length;
+        for(int i =0; i<size; i++){
+            if(arr[i] == 0){
+                // num is negative
+                zeroes++;
+            } else{
+                // num is positive
+                ones++;
+            }
+        }
+        int ans[] = {zeroes, ones};
+        return ans;
+    }  // T.C. -> O(n), S.C. -> O(1)
+
+
+
+
+
+
+
+
+
+
+
     static void main() {
         // Question 1: Find the average of array elements
         int [] arr = {1,2,3,4,5,6,7};
@@ -108,6 +137,13 @@ public class ArrayQuestions {
         int ans1[] = getPosNegSum(arr5);
         System.out.println("Positive Sum: " + ans1[0]);
         System.out.println("Negative Sum: " + ans1[1]);
+
+
+        // Question 6: Count the number of Zeroes and Ones
+        int arr6[] = {1,0,0,1,1,1,0,0,0,0,0,0,1};
+        int ans3[] = countZeroesAndOnes(arr6);
+        System.out.println("Number of zeroes in the array: " + ans3[0]);
+        System.out.println("Number of ones in the array: " + ans3[1]);
 
 
     }
