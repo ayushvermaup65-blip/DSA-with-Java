@@ -42,8 +42,20 @@ public class ArrayQuestions {
         // and ek baar bhi target nhi mila
         // iska matlab target nhi mila , target false
         return false;
-    }
+    }  // T.C. -> O(n), S.C. -> O(1)
 
+
+    // Question 4: Find the maximum element in an array
+    static int maxElement(int []arr){
+        int size = arr.length;
+        int maxNum = 0;
+        for (int i = 0; i<size; i++){
+            if (arr[i] > maxNum){
+                maxNum = arr[i];
+            }
+        }
+        return maxNum;
+    }  // T.C. -> O(n), S.C. -> O(1)
 
 
     static void main() {
@@ -66,5 +78,10 @@ public class ArrayQuestions {
         int target = 55;
         boolean ans2 = searchElement(arr3, 89);
         System.out.println(ans2);
+
+
+        // Question 4: Find the maximum element in an array
+        int [] arr4 = {3,4,17,23,45,78};
+        System.out.println(maxElement(arr4));
     }
 }
