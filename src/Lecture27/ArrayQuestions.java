@@ -97,6 +97,20 @@ public class ArrayQuestions {
 
 
 
+    // Question 7: Find first Unsorted Element in Array
+    static int getUnsortedElement(int []arr){
+        int size = arr.length;
+        for (int i = 0; i<size; i++){
+            if(arr[i+1] < arr[i]){
+                return arr[i+1];
+            }
+        }
+        // jis case me main loop se bahar ajaunga
+        return -1;
+    }  // T.C. -> O(n), S.C. -> O(1)
+
+
+
 
 
 
@@ -145,6 +159,10 @@ public class ArrayQuestions {
         System.out.println("Number of zeroes in the array: " + ans3[0]);
         System.out.println("Number of ones in the array: " + ans3[1]);
 
+
+        // Question 7: Find first Unsorted Element in Array
+        int arr7[] = {1,2,4,6,5,8,12};
+        System.out.println("First Unsorted element of array is: " + getUnsortedElement(arr7));
 
     }
 }
