@@ -31,6 +31,24 @@ public class Homework {
 
 
 
+    // Question 3: Print Alternate Extreme elements of an array
+    static void printAlternateExtreme(int[] arr) {
+        int start = 0;
+        int end = arr.length - 1;
+
+        while (start <= end) {
+            if (start == end) {
+                System.out.print(arr[start] + " ");
+            } else {
+                System.out.print(arr[start] + " ");
+                System.out.print(arr[end] + " ");
+            }
+            start++;
+            end--;
+        }
+    }
+
+
 
 
 
@@ -51,5 +69,11 @@ public class Homework {
 
         System.out.print("Intersection Elements: ");
         intersectionElements(arrA, arrB);
+
+
+
+        int []arr3 = {1,2,3,4,5,6};
+        System.out.println("Alternate Extreme Elements: ");
+        printAlternateExtreme(arr3);
     }
 }
