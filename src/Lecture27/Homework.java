@@ -2,7 +2,7 @@ package Lecture27;
 
 public class Homework {
 
-    // Question1: Swap Alternate Elements in an array
+    // Question 1: Swap Alternate Elements in an array
     static int[] swapAlternate(int []arr){
         int size = arr.length;
         for (int i = 0; i<size; i += 2){
@@ -12,6 +12,22 @@ public class Homework {
         }
         return arr;
     }  // T.C. -> O(n), S.C. -> O(1)
+
+
+
+    // Question 2: Print Array Intersection element
+    static void intersectionElements(int []arr1, int []arr2){
+        int newArray[];
+        for (int i = 0; i<arr1.length; i++){
+            for (int j = 0; j<arr2.length; j++){
+                if (arr1[i] == arr2[j]){
+                    System.out.print(arr1[i] + " ");
+                    break;
+                }
+            }
+        }
+    }  // T.C. -> O(n × m)(n = size of first array, m = size of second array)
+       // S.C. -> O(1)
 
 
 
@@ -27,5 +43,13 @@ public class Homework {
         for (int num : swapAlternate(arr)){
             System.out.println(num + " ");
         }
+
+
+        // Question 2: Print Array Intersection element
+        int[] arrA = {1, 2, 3, 4, 5};
+        int[] arrB = {3, 4, 5, 6, 7};
+
+        System.out.print("Intersection Elements: ");
+        intersectionElements(arrA, arrB);
     }
 }
