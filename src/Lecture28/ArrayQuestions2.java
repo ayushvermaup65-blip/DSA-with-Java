@@ -4,7 +4,7 @@ import JavaCollectionFramework.Map.HashMapDemo;
 
 import java.util.HashMap;
 
-public class ArrayQuestions2 {
+public class ArrayQuestions2  {
 
     //Question 1: Find the reverse of array
 //    static int[] reverseArray(int[] arr) {
