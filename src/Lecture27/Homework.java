@@ -46,7 +46,7 @@ public class Homework {
             start++;
             end--;
         }
-    }
+    }  // T.C. -> O(n), S.C. -> O(1)
 
 
 
