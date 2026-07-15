@@ -72,6 +72,7 @@ public class Homework {
 
 
 
+        // Question 3: Print Alternate Extreme elements of an array
         int []arr3 = {1,2,3,4,5,6};
         System.out.println("Alternate Extreme Elements: ");
         printAlternateExtreme(arr3);
