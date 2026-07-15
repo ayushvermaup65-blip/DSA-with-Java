@@ -4,7 +4,7 @@ import JavaCollectionFramework.Map.HashMapDemo;
 
 import java.util.HashMap;
 
-public class ArrayQuestions2  {
+public class ArrayQuestions2 {
 
     //Question 1: Find the reverse of array
 //    static int[] reverseArray(int[] arr) {
@@ -43,32 +43,67 @@ public class ArrayQuestions2  {
 
 
     // Question 3: Find the Mode of the array
-    static int getMode(int arr[]){
+//    static int getMode(int arr[]){
+//        HashMap<Integer, Integer> freq = new HashMap<>();
+//        for (int num : arr){
+//            freq.put(num, freq.getOrDefault(num, 0) + 1);
+//        }
+//
+//        // Niche code likha hai -> har element ki frequency show karne ke liye, but ye compulsary nhi hai.
+////        for (int i : freq.keySet()){
+////            // i -> will represent key
+////            System.out.println(i + " -> " + freq.get(i));
+////        }
+//
+//        int maxFreq = -1;
+//        int maxFreqWaliKey = -1;
+//
+//        for (int key : freq.keySet()){
+//            int currentKey = key;
+//            int currentKeyKiFrequency = freq.get(key);
+//            if (currentKeyKiFrequency > maxFreq){
+//                // mujhe naya max mil gya
+//                maxFreq = currentKeyKiFrequency;
+//                maxFreqWaliKey = currentKey;
+//            }
+//        }
+//        // jab loop se bahar aaoge to max freq wali key ready hai
+//        return maxFreqWaliKey;
+//    }  // T.C. -> O(n), S.C. -> O(n)
+
+
+
+    // Question 4: Identify elements with Highest and Lowest Frequency
+    static int[] getHighestLowestFreqElement(int arr[]){
         HashMap<Integer, Integer> freq = new HashMap<>();
-        for (int num : arr){
+        // insert data
+        for (int num: arr){
             freq.put(num, freq.getOrDefault(num, 0) + 1);
         }
-
-        // Niche code likha hai -> har element ki frequency show karne ke liye, but ye compulsary nhi hai.
-//        for (int i : freq.keySet()){
-//            // i -> will represent key
-//            System.out.println(i + " -> " + freq.get(i));
-//        }
-
-        int maxFreq = -1;
-        int maxFreqWaliKey = -1;
-
+        //hashmap is ready
+        int highestFreq = Integer.MIN_VALUE;
+        int highestNum = -1;
         for (int key : freq.keySet()){
             int currentKey = key;
-            int currentKeyKiFrequency = freq.get(key);
-            if (currentKeyKiFrequency > maxFreq){
-                // mujhe naya max mil gya
-                maxFreq = currentKeyKiFrequency;
-                maxFreqWaliKey = currentKey;
+            int currentFreq = freq.get(key);
+            if (currentFreq > highestFreq){
+                // highest ko update krna chahiye
+                highestFreq = currentFreq;
+                highestNum = currentKey;
             }
         }
-        // jab loop se bahar aaoge to max freq wali key ready hai
-        return maxFreqWaliKey;
+        int lowestFreq = Integer.MAX_VALUE;
+        int lowestNum = -1;
+        for (int key: freq.keySet()){
+            int currentKey = key;
+            int currentFreq = freq.get(key);
+            if (currentFreq < lowestFreq){
+                lowestFreq = currentFreq;
+                lowestNum = currentKey;
+            }
+        }
+        int ans[] = {highestNum, lowestNum};
+        return ans;
     }  // T.C. -> O(n), S.C. -> O(n)
 
 
@@ -99,8 +134,16 @@ public class ArrayQuestions2  {
 
 
         // Question 3: Find the Mode of the array
-        int arr3[] = {1,2,2,3,3,3,4,4,5,5,5,5,5,5};
-         int ans3 = getMode(arr3);
-        System.out.println(ans3);
+//        int arr3[] = {1,2,2,3,3,3,4,4,5,5,5,5,5,5};
+//         int ans3 = getMode(arr3);
+//        System.out.println(ans3);
+
+
+
+        // Question 4: Identify elements with Highest and Lowest Frequency
+        int arr4[] = {1,2,2,3,3,3,4,4,5,5,5,5,5,5};
+        int ans[] = getHighestLowestFreqElement(arr4);
+        System.out.println("Highest freq wala num: " + ans[0]);
+        System.out.println("Lowest freq wala num: " + ans[1]);
     }
 }
